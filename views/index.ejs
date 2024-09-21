@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas Avançado</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Gerenciador de Tarefas</h1>
+            <ul>
+                <li><a href="#add-task">Adicionar Tarefa</a></li>
+                <li><a href="#task-list">Lista de Tarefas</a></li>
+                <li><a href="#settings">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="add-task">
+            <h2>Nova Tarefa</h2>
+            <form id="task-form">
+                <label for="task-input">Tarefa:</label>
+                <input type="text" id="task-input" placeholder="Digite uma nova tarefa" required>
+                <label for="task-priority">Prioridade:</label>
+                <select id="task-priority">
+                    <option value="low">Baixa</option>
+                    <option value="medium">Média</option>
+                    <option value="high">Alta</option>
+                </select>
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+        </section>
+        <section id="task-list">
+            <h2>Lista de Tarefas</h2>
+            <ul id="tasks"></ul>
+        </section>
+        <section id="settings">
+            <h2>Configurações</h2>
+            <!-- Configurações adicionais podem ser adicionadas aqui -->
+        </section>
+    </main>
+    <div id="message" class="hidden"></div>
+    <script src="/script.js"></script>
+</body>
+</html>
